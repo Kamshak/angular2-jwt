@@ -1,26 +1,33 @@
 {
     "compilerOptions": {
         "noImplicitAny": true,
-        "module": "commonjs",
-        "target": "ES5",
+        "declaration": true,
+        "stripInternal": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
+        "module": "es2015",
+        "moduleResolution": "node",
+        "skipLibCheck": true,
         "sourceMap": true,
-        "declaration": true,
         "lib": [
             "dom",
             "es2015.collection",
             "es2015.promise",
             "es5"
         ],
-        "moduleResolution":"node"
+        "outDir": ".",
+        "rootDir": "./src"
     },
     "files": [
         "angular2-jwt.ts",
+        "angular2-jwt.module.ts",
         "angular2-jwt.spec.ts",
         "custom.d.ts"
     ],
     "exclude": [
         "node_modules"
-    ]
+    ],
+    "angularCompilerOptions": {
+        "genDir": "compiled"
+    }
 }

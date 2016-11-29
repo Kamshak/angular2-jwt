@@ -1,3 +1,6 @@
+/compiled
+*.metadata.json
+
 node_modules
 npm-debug.log
 typings

@@ -2,7 +2,7 @@ module.exports = function (config) {
     'use strict';
 
     config.set({
-        basePath: './',
+        basePath: './src',
         frameworks: ["jasmine"],
         // list of files / patterns to load in the browser
         files: [
