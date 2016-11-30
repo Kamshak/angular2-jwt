@@ -1,5 +1,5 @@
 import { Injectable, Provider } from '@angular/core';
-import { Http, Headers, Request, RequestOptions, RequestOptionsArgs, RequestMethod, Response } from '@angular/http';
+import { Http, Headers, Request, RequestOptions, BaseRequestOptions, RequestOptionsArgs, RequestMethod, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/fromPromise';
 import 'rxjs/add/operator/mergeMap';
@@ -20,7 +20,7 @@ export class AuthHttp {
   private config: IAuthConfig;
   public tokenStream: Observable<string>;
 
-  constructor(options: AuthConfig, private http: Http, private defOpts?: RequestOptions) {
+  constructor(options: AuthConfig, private http: Http, private defOpts?: BaseRequestOptions) {
     this.config = options.getConfig();
 
     this.tokenStream = new Observable<string>((obs: any) => {
