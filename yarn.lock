@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@angular/common@^2.0.0":
+"@angular/common@^2.2.3":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@angular/common/-/common-2.2.3.tgz#0d26bdfdea362ed32e436ced4f31bb69a9d7b9e4"
 
@@ -18,15 +18,15 @@
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-2.2.3.tgz#5a96b8b6c620ffe0c3b87b2f254e588abeb77a12"
 
-"@angular/core@^2.0.0":
+"@angular/core@^2.2.3":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-2.2.3.tgz#18b09740bf51bdeb906153704e771bce53fecdf6"
 
-"@angular/http@^2.0.0":
+"@angular/http@^2.2.3":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@angular/http/-/http-2.2.3.tgz#84941d638c961ebae248091d6d51ac6f241be882"
 
-"@angular/platform-browser@^2.0.0":
+"@angular/platform-browser@^2.2.3":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-2.2.3.tgz#f48d2452a6dfebc0d41274f0e3a02ba89c01b2b6"
 

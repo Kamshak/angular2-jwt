@@ -1,4 +1,7 @@
+import { Injectable, Optional, OpaqueToken, Inject } from "@angular/core";
 import { objectAssign } from './object-assign';
+
+export const AUTH_CONFIG: OpaqueToken = new OpaqueToken("AuthConfig"); // provide a IAuthConfigOptional under this token to overwrite defaults
 
 export interface IAuthConfig {
   globalHeaders: Array<Object>;
@@ -10,7 +13,8 @@ export interface IAuthConfig {
   tokenName: string;
 }
 
-export interface IAuthConfigOptional {
+// Needs to be a class for AOT to work 
+export /*interface*/ class IAuthConfigOptional {
     headerName?: string;
     headerPrefix?: string;
     tokenName?: string;
@@ -40,11 +44,12 @@ const AuthConfigDefaults: IAuthConfig = {
  * Sets up the authentication configuration.
  */
 
+@Injectable()
 export class AuthConfig {
 
   private _config: IAuthConfig;
 
-  constructor(config?: IAuthConfigOptional) {
+  constructor(@Optional() @Inject(AUTH_CONFIG) config?: IAuthConfigOptional) {
     config = config || {};
     this._config = objectAssign({}, AuthConfigDefaults, config);
     if (this._config.headerPrefix) {
