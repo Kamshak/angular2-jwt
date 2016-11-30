@@ -21,7 +21,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-This software contains the function b64decode in angular2-jwt.js. License of the function:
+This software contains the function b64decode in src/b64decode.ts (https://github.com/davidchambers/Base64.js). License of the function:
 This software is dual-licensed under Apache 2.0 and WTFPL
 
 

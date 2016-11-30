@@ -1,17 +1,10 @@
-/compiled
-*.metadata.json
+compiled
+dist
 
 node_modules
 npm-debug.log
+yarn-error.log
 typings
 
 Thumbs.db
 .DS_Store
-
-*.js
-!karma.conf.js
-*.map
-*.d.ts
-!custom.d.ts
-.idea/
-*.iml

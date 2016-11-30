@@ -2,18 +2,18 @@ module.exports = function (config) {
     'use strict';
 
     config.set({
-        basePath: './src',
+        basePath: './',
         frameworks: ["jasmine"],
         // list of files / patterns to load in the browser
         files: [
-            {pattern: 'angular2-jwt.spec.ts', watched: false}
+            {pattern: 'index.test.ts', watched: false}
         ],
 
         // list of files / patterns to exclude
         exclude: [],
 
         preprocessors: {
-            'angular2-jwt.spec.ts': [ 'webpack', 'sourcemap']
+            'index.test.ts': [ 'webpack', 'sourcemap']
         },
 
 

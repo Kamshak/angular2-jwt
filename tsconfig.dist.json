@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "declaration": true,
+        "stripInternal": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "module": "es2015",
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "inlineSources": true,
+        "lib": [
+            "dom",
+            "es2015.collection",
+            "es2015.promise",
+            "es5"
+        ],
+        "outDir": "./dist",
+        "rootDir": ".",
+        "target": "es5"
+    },
+    "files": [
+        "index.ts"
+    ],
+    "angularCompilerOptions": {
+        "strictMetadataEmit": true,
+        "genDir": "./compiled"
+    }
+}

@@ -1,5 +1,5 @@
 import "core-js";
-import {AuthConfig, AuthHttp, tokenNotExpired, JwtHelper} from "./angular2-jwt";
+import {AuthConfig, AuthHttp, tokenNotExpired, JwtHelper} from "../src/angular2-jwt";
 import {Observable} from "rxjs";
 
 const expiredToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjB9.m2OKoK5-Fnbbg4inMrsAQKsehq2wpQYim8695uLdogk";
