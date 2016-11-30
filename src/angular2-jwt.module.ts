@@ -12,4 +12,4 @@ import { AuthHttp } from './auth-http.service';
       AuthHttp
   ]
 })
-export class Angular2JwtModule { }
+export class JwtModule { }
