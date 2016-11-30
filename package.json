@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "ngc -p tsconfig.dist.json --watch",
     "test": "karma start --single-run",
-    "clean:pre": "rimraf dist",
+    "clean:pre": "rimraf dist/*",
     "clean:post": "rimraf compiled",
     "copy": "cpy LICENSE package.json README.md dist",
     "build:js": "ngc -p tsconfig.dist.json",
@@ -31,6 +31,7 @@
     "url": "https://github.com/auth0/angular2-jwt/issues"
   },
   "main": "bundles/angular2-jwt.umd.js",
+  "module": "./index.js",
   "typings": "./index.d.ts",
   "homepage": "https://github.com/auth0/angular2-jwt#readme",
   "devDependencies": {
